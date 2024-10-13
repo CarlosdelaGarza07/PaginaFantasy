@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="texto.js"></script>
     <title>PaginaPrincipal</title>
     <style>
         p{
@@ -21,32 +22,28 @@
             font-family: 'Lobster', cursive;
         }
 
-        a{
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.5;
-        }
-
         h2{
             color: black;
             font-family: 'Lobster', cursive;
         }
+        
     </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <h1>Fantasy Football</h1>
 <footer>El juego de Fantasía para los gurús de la NFL</footer>
 <figure>
     <img src="https://static.www.nfl.com/image/private/f_auto/league/vmog46rnxqxwgwltwa4a" alt="Logo Fantasy" width="120px ">
 </figure>
-<body style="background-color: skyblue;"> 
+<body style="background-color: rgb(236, 209, 174);" > 
     <nav>
-            <ul>
-                <li><a href="conceptos.html">Conceptos Básicos</a></li>
-                <li><a href="configuracion.html">Mejor Configuración</a></li>
-                <li><a href="rankings.html">Ranking de Jugadores</a></li>
-                <li><a href="historia.html">Historia del Juego</a></li>
-            </ul>
-        </footer>
+        <div class="listadomenu">
+                <div><a href="conceptos.html">Conceptos Básicos</a></div>
+                <div><a href="configuracion.html">Mejor Configuración</a></div>
+                <div><a href="rankings.html">Ranking de Jugadores</a></div>
+                <div><a href="historia.html">Historia del Juego</a></div>
+        </div>
     </nav>
     <hr>
     <main>
@@ -57,7 +54,7 @@
             <h2>¿Cómo se juega?</h2>
             <p>Antes que nada tienes que encontrar una liga o encontrar amigos o familiares que les guste la NFL para poder jugar, el mínimo de participantes es de 2 y el máximo (recomendable) es de 12, aunque también está bien tener 14 o 16, el chiste es que termine en un número par.</p>
             <p>Teniendo los participantes, se hace un "Draft" en donde cada participante por turnos, escoge un jugador hasta llenar su roster con las siguientes posiciones:</p>
-            <ul>
+            <ul class="listadoposiciones">
                 <li>1 Quarterback</li>
                 <li>2 Running Backs</li>
                 <li>2 Wide Receivers</li>
@@ -72,6 +69,10 @@
             <p>En el siguiente vídeo se te mostrará como puedes draftear desde tu celular o computadora, se te mostrará todo el menú y lo que debes hacer para draftear:</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/obbVYYpU5SU?si=Cna4DrNvwGE_zZeb&amp;start=476" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>Después del Draft, el paso siguiente más importante es mantenerte al tanto de los jugadores pues es importante darle un seguimiento a todos, conocer su estado de salud, ver sus estadísticas, conocer sus rivales y tomar decisiones acerca de quien iniciar y quien sentar en cada semana pues estas decisiones pueden afectar todo tu camino al campeonato pues un solo punto puede cambiarte tu destino en la temporada para ser campeón.</p>
+
+            <aside>
+                <button onclick="mostrarPalabraAlAzar()">Jugador</button>
+            </aside>
 
             <h2><b>IMPORTANTE!!</b></h2>
             <p>Si quieres practicar tus Drafts y ver como se escojen los jugadores además de recomendaciones y el por que escogerlos, te recomiendo hacer un <em>Mock Draft</em>.</p><br>
